@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Taco Maker 3D</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          html{
+            height: 100%;
+          }
+          body{
+            height: 100%;
+            background: #3674ef url(tortilla.jpg) no-repeat center
+          }
+          .toppings img{
+            position: absolute;
+            left: 10px
+          }
+        </style>
+    </head>
+    <body>
+        <div class='toppings'>
+            <img style="top: 0px;" src="toppings/beans.png "/>
+            <img style="top: 100px;" src="toppings/beef.png "/>
+            <img style="top: 200px;" src="toppings/cheese.png "/>
+            <img style="top: 300px;" src="toppings/onions.png "/>
+            <img style="top: 400px;" src="toppings/sour_cream.png "/>
+            <img style="top: 500px;" src="toppings/tomatoes.png "/>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script>
+          $( ".toppings img" ).draggable();
+        </script>
+    </body>
+</html>

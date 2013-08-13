@@ -14,8 +14,12 @@
             height: 100%;
           }
           body{
+            text-align: center;
             height: 100%;
             background: #3674ef url(tortilla.jpg) no-repeat center
+          }
+          button{
+            font-size: 2em
           }
           .toppings img{
             position: absolute;
@@ -24,6 +28,7 @@
         </style>
     </head>
     <body>
+        <button>PRINT TO 3D PRINTER</button>
         <div class='toppings'>
             <img style="top: 0px;" src="toppings/beans.png "/>
             <img style="top: 100px;" src="toppings/beef.png "/>
@@ -33,8 +38,8 @@
             <img style="top: 500px;" src="toppings/tomatoes.png "/>
         </div>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src="jquery-ui.min.js"></script>
         <script>
           $( ".toppings img" ).draggable();
         </script>
